@@ -21,8 +21,8 @@ ShopKart | Online Shopping
                     <div class="card-body">
                         <h5 class="card-title text-primary">{{item.name}}</h5>
                         <p class="card-text">
-                           <span class="float-start old_price"><s>Rs.{{item.original_price | stringformat:'d' }}</s></span> 
-                           <span class="float-end new_price">Rs.{{item.selling_price  | stringformat:'d'}}</span> 
+                           <span class="float-start old_price"><s>{{item.original_price | stringformat:'d' }}</s></span> 
+                           <span class="float-end new_price">{{item.selling_price  | stringformat:'d'}}</span> 
                         </p>
 
                     </div>

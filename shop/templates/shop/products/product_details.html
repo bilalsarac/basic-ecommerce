@@ -33,8 +33,9 @@ ShopKart | Online Shopping
                 <h5 class="text-success"> {{products | upper}}</h5>
                 <p>{{products.vendor}}</p>
                 <p>{{products.description}}</p>
-                <h6 class="my-2 text-danger">Current Price : Rs.<s>{{products.original_price}}</s></h6>
-                <h5 class="my-2 text-primary">Offer Price : Rs.{{products.selling_price}}</h5>
+                <h6 class="my-2 text-danger">Current Price : <s>{{products.original_price}}</s></h6>
+                <h5 class="my-2 text-primary">Offer Price : {{products.selling_price}}</h5>
+                <h5>Quantity: {{products.quantity}}</h5>
                 <div class="my-3">
                     {% if products.quantity > 0 %}
                     <input type="hidden" value="{{products.id}}" id="pid">
